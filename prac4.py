@@ -43,12 +43,11 @@ def setup():
 def changeSamplingRate(channel):
     global samplingRate
     samplingRates = [10, 5, 1]
-    print(samplingRate)
     if samplingRate != 1:
         samplingRate = samplingRates[samplingRates.index(samplingRate)+1]
     else:
         samplingRate = 10
-    print(samplingRate)
+
 
 def fetch_sensor_val():
     global chanTemp
